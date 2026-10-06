@@ -289,6 +289,18 @@ body.nav-open .sticky-call{display:none}
   .sub--mega .mega-all .text-link{color:var(--blue-600);padding:.35rem .5rem}
   .sub--mega .mega-all .text-link:hover{color:var(--blue-700);background:none}
 }
+/* Six top-level items since the Implant Education tab (Oct 2026): tighter spacing on smaller desktops so the bar stays on one line */
+@media (min-width:1200px){
+  .header-bar{gap:.5rem}
+  .nav-list{gap:0}
+  .nav-list>li>.nav-item>a,.nav-list>li>.nav-item>.nav-btn,.nav-list>li>.nav-btn{padding:.5rem .62rem;font-size:.93rem}
+  .nav-item>.sub-toggle{margin-left:-.45rem;margin-right:.1rem}
+  .header-phone,.header-book{padding:.5rem .95rem;font-size:.9rem}
+}
+@media (min-width:1440px){
+  .nav-list>li>.nav-item>a,.nav-list>li>.nav-item>.nav-btn,.nav-list>li>.nav-btn{padding:.55rem .75rem;font-size:.96rem}
+  .header-phone,.header-book{padding:.55rem 1.1rem;font-size:.95rem}
+}
 @media (min-width:1280px){
   .nav-item>a{padding:.55rem 1rem}
 }
@@ -649,7 +661,7 @@ body{padding-bottom:4.6rem}
 }
 
 /* =========================================================
-   Inner pages (About, team, services, service pages, blog, contact)
+   Inner pages (About, team, services, service pages, implant education, contact)
    ========================================================= */
 .hero--page{min-height:0}
 @media (min-width:900px){
@@ -746,11 +758,6 @@ body{padding-bottom:4.6rem}
 .member{display:grid;gap:1.25rem;align-items:start}
 @media (min-width:700px){.member{grid-template-columns:5rem 1fr}}
 .member__badge{width:5rem;height:5rem;border-radius:50%;background:var(--grad);color:var(--ink-deep);display:grid;place-items:center;font-family:var(--font-heading);font-size:1.5rem;letter-spacing:.02em}
-.blog-list{display:grid;gap:1.25rem}
-@media (min-width:700px){.blog-list{grid-template-columns:1fr 1fr 1fr}}
-.blog-topic{padding:1.4rem 1.5rem;border:1px solid var(--grey-200);border-radius:var(--radius);background:var(--surface)}
-.blog-topic h3{font-size:1.1rem;margin-bottom:.4rem}
-.blog-topic p{color:var(--muted);font-size:.96rem;margin:0}
 .emergency-note{background:var(--surface);border-left:4px solid var(--blue-500);padding:1rem 1.25rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;margin:0 0 1rem;color:var(--ink)}
 .faq-media .photo{aspect-ratio:4/5;object-fit:cover}
 /* Profile hero (Dr Lee): portrait beside the copy, no background photograph */
@@ -931,6 +938,7 @@ body{padding-bottom:4.6rem}
           </ul>
         </li>
 
+        <li><div class="nav-item"><a href="/implantology/">Implant Education</a></div></li>
         <li><div class="nav-item"><a href="/contact/">Contact</a></div></li>
       </ul>
 
@@ -1134,6 +1142,7 @@ body{padding-bottom:4.6rem}
           <li><a href="/team/dental-assistants-reception/">Dental Assistants and Reception Team</a></li>
           <li><a href="/services/">Services</a></li>
           <li><a href="/services/general-dentistry/emergency-dentistry/">Emergency Dentistry</a></li>
+          <li><a href="/implantology/">Implant Education</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
       </div>

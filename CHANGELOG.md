@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-06: Implant Education page replaces the Blog (client request, 5 Oct 2026)
+- New page at `/implantology/`: hero, A Special Interest in Implantology, Investing in Modern Technology, Teaching Implantology, Seminar Gallery (7 photos with a lightbox, 2 videos) and Book an Implant Consultation. Draft copy with highlighted `[CONFIRM]` markers for anything not yet supplied.
+- "Implant Education" added to the main navigation (where Blog sat) and the footer, on every page. Desktop nav spacing tightened so six items fit on one line from 1200px.
+- Blog page removed; `/blog/` redirects to `/implantology/`. Leftover blog styles removed.
+- Centaur (D4W eAppointments) booking embed added to the new page's booking panel, lazy-loaded, with a link fallback.
+- Seminar media: photos converted to WebP (max 2048px, grid thumbnails at 600 to 900px), videos re-encoded to H.264 MP4 with poster frames, no autoplay. Page-specific Open Graph image and VideoObject schema.
+- Sitemap now lists `/implantology/`.
+
 ## 2026-09-24: Static staging build for GitHub and Vercel
 - Packaged the Round 3 light-theme build as a static Vercel site: every page at its live URL, clean URLs with trailing slashes, 404 page, sitemap.xml, robots.txt.
 - Contact form now posts to `/api/enquiry` (SMTP2GO relay), with hard-coded fallback recipients, a honeypot and a minimum fill time.

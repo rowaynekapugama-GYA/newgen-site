@@ -4,24 +4,72 @@
   "outputDirectory": "public",
   "cleanUrls": true,
   "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "/implantology/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/implantology/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
       ]
     },
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "(?<sub>.*)\\.vercel\\.app" }],
-      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+      "has": [
+        {
+          "type": "host",
+          "value": "(?<sub>.*)\\.vercel\\.app"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
     },
     {
       "source": "/images/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=86400" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/media/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=86400"
+        }
+      ]
     }
   ]
 }

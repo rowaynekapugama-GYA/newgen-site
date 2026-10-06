@@ -23,7 +23,7 @@ There is no build step and no `package.json`. Vercel serves `public/` as-is and 
 
 ## Deploy
 
-1. **GitHub.** Create a new **private** repository (for example `gya-clients/newgen-dental-web`). Choose *uploading an existing file*, then drag in the **contents** of this folder: `public`, `api`, `vercel.json`, `README.md`, `CHANGELOG.md`. The repo is 68 files, so it goes up in one batch. `.gitignore` and `.env.example` are hidden on a Mac. They are optional; press Cmd+Shift+. in Finder to show and add them.
+1. **GitHub.** Create a new **private** repository (for example `gya-clients/newgen-dental-web`). Choose *uploading an existing file*, then drag in the **contents** of this folder: `public`, `api`, `vercel.json`, `README.md`, `CHANGELOG.md`. The repo is about 90 files. GitHub's web uploader takes 100 at a time, so it still goes up in one batch. `.gitignore` and `.env.example` are hidden on a Mac. They are optional; press Cmd+Shift+. in Finder to show and add them.
 2. **Vercel.** Go to Add New, then Project, and import the repo.
    - Framework Preset: **Other**
    - Build Command: leave empty
@@ -57,7 +57,10 @@ There is no build step and no `package.json`. Vercel serves `public/` as-is and 
 - [ ] **Spam protection.** The form has a hidden honeypot field and a minimum fill time. Add Cloudflare Turnstile or reCAPTCHA if spam gets through.
 - [ ] **Tracking.** Add the GA4 and Meta Pixel IDs in `public/site-config.js`. Add a cookie notice first. The notice will also need to cover the Google Maps embed and any live chat.
 - [ ] **Dentflo live chat** snippet (requested earlier), if still wanted.
-- [ ] **Blog.** It is built at `/blog/` but not linked (the client's Round 2 decision). It is set to `noindex` and left out of the sitemap until there are articles. Remove the robots meta in `public/blog/index.html` and add it to the sitemap when it goes live.
+- [ ] **Implant Education page: resolve every `[CONFIRM: ...]` marker.** `/implantology/` carries 7 highlighted placeholders (name spelling, training, years placing implants, implant equipment, seminar venue, organiser, other teaching). They show on the page in yellow on purpose so the client can answer them on staging. None can go live. Check with `grep -c 'mark class="confirm"' public/implantology/index.html` (must be 0).
+- [ ] **Seminar photos and videos: consent.** The gallery shows other dentists who attended the seminar. Confirm the organiser or each attendee is happy to appear on the practice website. The video audio was not reviewed by GYA; listen to both clips before go-live.
+- [ ] **Centaur online booking embed.** The practice's D4W snippet (orgId 2893, practiceId 3304) is embedded on `/implantology/` and loads only when the visitor scrolls to the booking panel. It could not be tested from GYA's build environment; open the page on staging and confirm the booking screen appears. A link to the same booking screen sits underneath as a fallback. Add Centaur to the privacy policy and cookie notice (it sets its own cookies).
+- [ ] **Blog.** Removed. Its navigation slot is now Implant Education. `vercel.json` redirects `/blog/` to `/implantology/`. Delete `public/blog/` from the GitHub repo if it is still there.
 - [ ] **Hero family photograph.** Confirm the licence.
 - [ ] **Reversed (white) logo.** Get it at full resolution from the client.
 - [ ] **Client dashboard.** Port to the GYA Site Kit (Payload at `/admin`) after sign-off, per the standard stack.
@@ -75,9 +78,10 @@ There is no build step and no `package.json`. Vercel serves `public/` as-is and 
 
 ## Copy notes
 
-- **Em dashes in the approved copy.** The house rule is no em dashes. The client copy is used exactly as written, so 22 em dashes remain on these pages: Home, About, Dental Assistants and Reception, General Dentistry, Dental Hygiene, Dental Fillings, Tooth Extractions, Children's Dentistry, Dentures, Digital Dentistry, Traditional Braces, Implants and Advanced Dentistry, TMJ and Jaw Pain, and Blog. If the content team approves, they can be swapped for commas or colons in one pass. The em dashes in code comments have been removed.
+- **Em dashes in the approved copy.** The house rule is no em dashes. The client copy is used exactly as written, so 20 em dashes remain on these pages: Home, About, Dental Assistants and Reception, General Dentistry, Dental Hygiene, Dental Fillings, Tooth Extractions, Children's Dentistry, Dentures, Digital Dentistry, Traditional Braces, Implants and Advanced Dentistry, and TMJ and Jaw Pain. If the content team approves, they can be swapped for commas or colons in one pass. The em dashes in code comments have been removed.
 - **"Specialist" in the FAQs.** Four FAQ answers use the word when explaining referral. They appear on the pages but are excluded from the FAQPage schema, so the word stays out of structured data.
 - **New microcopy** (not from the copy document): the enquiry form's sent and failed messages, and the 404 page wording.
+- **Implant Education page copy is a GYA draft**, not content-team copy. It needs client approval along with the `[CONFIRM]` answers. The page heading uses "Dr JohnPaul" as briefed; the rest of the site uses "Dr John Paul Lee" from the approved copy.
 
 ## Making changes before the dashboard exists
 

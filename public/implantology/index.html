@@ -3,20 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dental Health Blog | New’Gen Dental Seymour</title>
-<meta name="description" content="Practical dental information written by our team in Seymour, covering treatment, oral health, nervous patients and care for children.">
-<link rel="canonical" href="https://newgendental.com.au/blog/">
+<title>Dr JohnPaul: Implantology and Education | New’Gen Dental</title>
+<meta name="description" content="Dr JohnPaul’s ongoing education in dental implants, the technology used at New’Gen Dental Surgery in Seymour, and his teaching of implantology to other dentists.">
+<link rel="canonical" href="https://newgendental.com.au/implantology/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="New’Gen Dental Surgery">
 <meta property="og:locale" content="en_AU">
-<meta property="og:title" content="Dental Health Blog | New’Gen Dental Seymour">
-<meta property="og:description" content="Practical dental information written by our team in Seymour, covering treatment, oral health, nervous patients and care for children.">
-<meta property="og:url" content="https://newgendental.com.au/blog/">
-<meta property="og:image" content="https://newgendental.com.au/images/og-newgen-dental.jpg">
+<meta property="og:title" content="Dr JohnPaul: Implantology and Education | New’Gen Dental">
+<meta property="og:description" content="Dr JohnPaul’s ongoing education in dental implants, the technology used at New’Gen Dental Surgery in Seymour, and his teaching of implantology to other dentists.">
+<meta property="og:url" content="https://newgendental.com.au/implantology/">
+<meta property="og:image" content="https://newgendental.com.au/images/og-implantology.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="robots" content="noindex, follow">
 <meta name="theme-color" content="#FFFFFF">
 <script>document.documentElement.classList.replace('no-js','js')</script>
 
@@ -289,6 +288,18 @@ body.nav-open .sticky-call{display:none}
   .sub--mega .mega-all{grid-column:1/-1;border-top:1px solid var(--grey-200);margin-top:.5rem;padding-top:.75rem;text-align:right}
   .sub--mega .mega-all .text-link{color:var(--blue-600);padding:.35rem .5rem}
   .sub--mega .mega-all .text-link:hover{color:var(--blue-700);background:none}
+}
+/* Six top-level items since the Implant Education tab (Oct 2026): tighter spacing on smaller desktops so the bar stays on one line */
+@media (min-width:1200px){
+  .header-bar{gap:.5rem}
+  .nav-list{gap:0}
+  .nav-list>li>.nav-item>a,.nav-list>li>.nav-item>.nav-btn,.nav-list>li>.nav-btn{padding:.5rem .62rem;font-size:.93rem}
+  .nav-item>.sub-toggle{margin-left:-.45rem;margin-right:.1rem}
+  .header-phone,.header-book{padding:.5rem .95rem;font-size:.9rem}
+}
+@media (min-width:1440px){
+  .nav-list>li>.nav-item>a,.nav-list>li>.nav-item>.nav-btn,.nav-list>li>.nav-btn{padding:.55rem .75rem;font-size:.96rem}
+  .header-phone,.header-book{padding:.55rem 1.1rem;font-size:.95rem}
 }
 @media (min-width:1280px){
   .nav-item>a{padding:.55rem 1rem}
@@ -650,7 +661,7 @@ body{padding-bottom:4.6rem}
 }
 
 /* =========================================================
-   Inner pages (About, team, services, service pages, blog, contact)
+   Inner pages (About, team, services, service pages, implant education, contact)
    ========================================================= */
 .hero--page{min-height:0}
 @media (min-width:900px){
@@ -747,11 +758,6 @@ body{padding-bottom:4.6rem}
 .member{display:grid;gap:1.25rem;align-items:start}
 @media (min-width:700px){.member{grid-template-columns:5rem 1fr}}
 .member__badge{width:5rem;height:5rem;border-radius:50%;background:var(--grad);color:var(--ink-deep);display:grid;place-items:center;font-family:var(--font-heading);font-size:1.5rem;letter-spacing:.02em}
-.blog-list{display:grid;gap:1.25rem}
-@media (min-width:700px){.blog-list{grid-template-columns:1fr 1fr 1fr}}
-.blog-topic{padding:1.4rem 1.5rem;border:1px solid var(--grey-200);border-radius:var(--radius);background:var(--surface)}
-.blog-topic h3{font-size:1.1rem;margin-bottom:.4rem}
-.blog-topic p{color:var(--muted);font-size:.96rem;margin:0}
 .emergency-note{background:var(--surface);border-left:4px solid var(--blue-500);padding:1rem 1.25rem;border-radius:0 var(--radius-sm) var(--radius-sm) 0;margin:0 0 1rem;color:var(--ink)}
 .faq-media .photo{aspect-ratio:4/5;object-fit:cover}
 /* Profile hero (Dr Lee): portrait beside the copy, no background photograph */
@@ -782,11 +788,59 @@ body{padding-bottom:4.6rem}
 .hero--page .hero-bg{object-position:60% 40%}
 .hero--team .hero-bg{object-position:50% 38%}
 @media (min-width:900px){.hero--team .hero-bg{object-position:100% 32%}}
+
+/* =========================================================
+   Implant Education page
+   ========================================================= */
+mark.confirm{background:#FFF1B8;color:#4A3A00;padding:.05em .4em;border-radius:4px;font-weight:600;font-size:.88em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.hero--impl .hero-profile__media img{object-position:50% 40%}
+#book-implant .hero-badge{margin-top:1.1rem}
+.impl-note{font-size:.92rem;color:var(--muted);border-left:3px solid var(--blue-500);padding:.2rem 0 .2rem 1rem;margin:1.25rem 0 0}
+.sgallery{display:grid;gap:.75rem;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:1.5rem}
+@media (min-width:900px){.sgallery{grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}}
+.sg-item{position:relative;display:block;border-radius:var(--radius-sm);overflow:hidden;background:var(--grey-100);border:1px solid var(--grey-200)}
+.sg-item img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;transition:transform .5s ease}
+.sg-item:hover img,.sg-item:focus-visible img{transform:scale(1.04)}
+.sg-item:focus-visible{outline:3px solid var(--blue-500);outline-offset:3px}
+.sg-item--wide{grid-column:span 2}
+.sg-item--wide img{aspect-ratio:4/3}
+@media (min-width:900px){.sg-item--wide{min-height:100%}.sg-item--wide img{position:absolute;inset:0;aspect-ratio:auto;height:100%}}
+.sg-item .sg-zoom{position:absolute;right:.6rem;bottom:.6rem;width:2.2rem;height:2.2rem;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.92);color:var(--ink-deep);box-shadow:0 2px 8px rgba(13,30,61,.18);opacity:0;transform:translateY(4px);transition:opacity var(--ease),transform var(--ease)}
+.sg-item .sg-zoom svg{width:1rem;height:1rem}
+.sg-item:hover .sg-zoom,.sg-item:focus-visible .sg-zoom{opacity:1;transform:none}
+@media (hover:none){.sg-item .sg-zoom{opacity:1;transform:none}}
+.svideos-head{margin:clamp(2.25rem,4vw,3rem) 0 0}
+.svideos{display:grid;gap:1rem;grid-template-columns:repeat(2,minmax(0,1fr));max-width:40rem;margin-top:1.25rem}
+.svideos figure{margin:0}
+.svideos video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:var(--radius-sm);background:#0D1E3D;border:1px solid var(--grey-200)}
+.svideos figcaption{font-size:.88rem;color:var(--muted);margin-top:.5rem;line-height:1.45}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:200;background:rgba(9,16,30,.92);display:grid;grid-template-rows:auto 1fr auto;color:#fff}
+.lb[hidden]{display:none}
+body.lb-open{overflow:hidden}
+.lb__bar{display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem;font-size:.9rem;color:rgba(255,255,255,.8)}
+.lb__stage{display:grid;place-items:center;min-height:0;padding:0 3.5rem}
+.lb__stage img{max-width:100%;max-height:calc(100dvh - 9rem);width:auto;height:auto;border-radius:6px;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.lb__cap{text-align:center;padding:.75rem 1rem 1.25rem;font-size:.95rem;color:rgba(255,255,255,.88)}
+.lb button{color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:50%;width:2.9rem;height:2.9rem;display:grid;place-items:center;cursor:pointer}
+.lb button:hover,.lb button:focus-visible{background:rgba(255,255,255,.24);outline:none;box-shadow:0 0 0 3px rgba(0,196,189,.6)}
+.lb button svg{width:1.2rem;height:1.2rem}
+.lb__prev,.lb__next{position:fixed;top:50%;transform:translateY(-50%)}
+.lb__prev{left:.6rem}.lb__next{right:.6rem}
+@media (max-width:599.98px){.lb__stage{padding:0 .5rem}.lb__prev,.lb__next{top:auto;bottom:4.25rem;transform:none}}
+/* online booking embed */
+.booking-embed{background:var(--surface);border:1px solid var(--grey-200);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(1rem,2.5vw,1.5rem);min-height:22rem}
+.booking-embed h3{margin:0 0 .35rem}
+.booking-embed>p{color:var(--muted);font-size:.95rem;margin:0 0 1rem}
+.booking-embed #centaurIframe{min-height:16rem;border-radius:var(--radius-sm);background:var(--surface-2);display:grid}
+.booking-embed #centaurIframe:empty::before{content:"Loading online booking...";place-self:center;color:var(--muted);font-size:.95rem}
+.booking-embed #centaurIframe iframe{width:100%;min-height:560px;border:0;border-radius:var(--radius-sm)}
+.booking-embed .booking-fallback{font-size:.88rem;color:var(--muted);margin:.85rem 0 0}
 </style>
 
 <!-- Dentist schema (home page only) -->
 <!-- FAQPage schema: the six home page questions, verbatim -->
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who writes the articles on this blog?", "acceptedAnswer": {"@type": "Answer", "text": "Our articles are prepared by the team at New'Gen Dental Surgery in Seymour and reflect how we practise and the questions our patients ask us."}}, {"@type": "Question", "name": "Is the information here specific to my situation?", "acceptedAnswer": {"@type": "Answer", "text": "No. Our articles are general in nature. Your circumstances may differ, so please book an examination for advice specific to you."}}, {"@type": "Question", "name": "How often do you publish?", "acceptedAnswer": {"@type": "Answer", "text": "We publish as topics come up, usually driven by the questions our patients are asking at the time."}}, {"@type": "Question", "name": "Can I suggest a topic?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Call the practice on 03 5792 2055 or send an enquiry with your suggestion and we will consider it for a future article."}}, {"@type": "Question", "name": "Do your articles include pricing?", "acceptedAnswer": {"@type": "Answer", "text": "No. Fees vary depending on your individual needs, so we provide a written estimate after an examination rather than publishing prices."}}, {"@type": "Question", "name": "I read something here that worries me. What should I do?", "acceptedAnswer": {"@type": "Answer", "text": "Book an appointment. Call 03 5792 2055 and our team will arrange a time to examine the issue properly rather than guessing from an article."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoObject", "name": "Dr JohnPaul explaining the implant drilling sequence to participants", "description": "Dr JohnPaul explaining the implant drilling sequence to participants, at the hands-on implant seminar held on 3 and 4 October 2026.", "thumbnailUrl": "https://newgendental.com.au/images/implantology/implant-seminar-video-01-poster.webp", "contentUrl": "https://newgendental.com.au/media/implantology/implant-seminar-video-01.mp4", "uploadDate": "2026-10-06", "duration": "PT24S"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoObject", "name": "Dr JohnPaul demonstrating implant placement on a training model", "description": "Dr JohnPaul demonstrating implant placement on a training model, at the hands-on implant seminar held on 3 and 4 October 2026.", "thumbnailUrl": "https://newgendental.com.au/images/implantology/implant-seminar-video-02-poster.webp", "contentUrl": "https://newgendental.com.au/media/implantology/implant-seminar-video-02.mp4", "uploadDate": "2026-10-06", "duration": "PT21S"}</script>
 <script src="/site-config.js" defer></script>
 </head>
 <body>
@@ -932,6 +986,7 @@ body{padding-bottom:4.6rem}
           </ul>
         </li>
 
+        <li><div class="nav-item"><a href="/implantology/" aria-current="page">Implant Education</a></div></li>
         <li><div class="nav-item"><a href="/contact/">Contact</a></div></li>
       </ul>
 
@@ -945,157 +1000,89 @@ body{padding-bottom:4.6rem}
 </header>
 
 <main id="main">
-  <section class="hero hero--page" aria-labelledby="hero-title">
-    <img class="hero-bg" src="/images/waiting-room.webp" width="1600" height="900" alt="The waiting area at New’Gen Dental Surgery, with the practice monogram on the brick wall" fetchpriority="high" decoding="async">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-head">
-          <span class="eyebrow">Blog</span>
-          <h1 id="hero-title">Dental Health, Explained Plainly</h1>
-        </div>
-        <div class="hero-aside">
-          <p class="hero-support">Our blog is where we answer the questions patients ask us most often — the ones that come up in the chair, at reception and over the phone.</p><p class="hero-support">Dental information online can be confusing and, at times, contradictory. What we publish here is written by our team in Seymour and reflects how we actually practise: honest, practical information without pressure or exaggeration.</p>
-          <div class="btn-row">
-            <a class="btn btn--primary" href="tel:0357922055"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call 03 5792 2055</a>
-            <a class="btn btn--secondary" href="https://www.centaurportal.com/d4w/org-2893/search?practiceID=3304" target="_blank" rel="noopener">Book online</a>
-          </div>
-          <a class="hero-textlink" href="/contact/">Send an enquiry</a>
-        </div>
-      </div>
-    </div>
-  </section><section class="section section--grey" aria-labelledby="s0"><div class="container"><div class="section-head" data-reveal><h2 id="s0">What You Will <em class="hl">Find Here</em></h2></div><div class="blog-list" data-stagger><article class="blog-topic"><h3>Practical oral health advice</h3><p>Straightforward guidance on brushing and flossing, what causes decay and gum disease, how often to have a check-up, and what to do when something feels wrong.</p></article><article class="blog-topic"><h3>Treatment explained before you commit</h3><p>Articles that walk through what a treatment involves, how long it usually takes, what recovery looks like, and what the alternatives are. Understanding a treatment beforehand makes the decision easier and the appointment less daunting.</p></article><article class="blog-topic"><h3>Help for nervous patients</h3><p>Practical suggestions for patients who find dental visits difficult, including what support is available at our practice and how to make an appointment more manageable.</p></article><article class="blog-topic"><h3>Care for children and families</h3><p>Advice for parents on first visits, teething, brushing habits, mouthguards for sport, and the Child Dental Benefits Schedule.</p></article><article class="blog-topic"><h3>Technology and how it helps</h3><p>How intraoral scanning, OPG imaging, facial scanning and in-house crown milling change what a visit looks like, and what that means for you as a patient.</p></article><article class="blog-topic"><h3>Practice news</h3><p>Updates from the team at New&#x27;Gen Dental, including changes to our opening hours, new equipment and what is happening at the practice on Anzac Avenue.</p></article></div></div></section><section class="section section--grey" aria-labelledby="s1"><div class="container split split--page"><div data-reveal="left"><h2 id="s1">Written for Our <em class="hl">Community</em></h2><div class="ps-body"><p>We write for the people we see every day — families in Seymour, Nagambie, Broadford, Puckapunyal, Avenel, Tallarook, Kilmore, Wallan, Pyalong, Trawool and Yea.</p><p>General information published here is not a substitute for a consultation. Every mouth is different, and the only way to know what is right for you is an examination and a conversation about your circumstances.</p></div></div><div class="split__media" data-reveal="right"><img class="photo photo--shadow" src="/images/rayface-facial-scanner.webp" width="1600" height="1200" alt="The RayFace facial scanner at New’Gen Dental" loading="lazy" decoding="async"></div></div></section>  <section class="section" id="book" aria-labelledby="book-title">
-    <div class="container book-grid">
-      <div data-reveal="left">
-        <span class="eyebrow">Appointments</span>
-        <h2 id="book-title">Book Your <em class="hl">Appointment</em></h2>
-        <p class="lead">Have a question you would like us to cover? Call <a href="tel:0357922055">03 5792 2055</a> or <a href="/contact/">send us an enquiry</a>.</p>
-
-        <dl class="details">
-          <div>
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
-            <dt>Phone</dt>
-            <dd><a href="tel:0357922055">03 5792 2055</a></dd>
-          </div>
-          <div>
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-            <dt>Address</dt>
-            <dd>72 Anzac Avenue, Seymour VIC 3660</dd>
-          </div>
-          <div>
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
-            <dt>Hours</dt>
-            <dd>Monday to Friday, 9am to 5pm</dd>
-          </div>
-        </dl>
-      </div>
-
-      <div class="book-card" data-reveal="right">
-        <p>Wheelchair access is available at the rear of the practice. HICAPS is available for on-the-spot health fund claiming, so please bring your health fund card. We are a preferred provider for Medibank and Bupa, and we participate in Smile.com.au. Payment plans are available through DentiCare and Pretty Penny Finance.</p>
-
-        <div class="funds">
-          <h3>Health funds</h3>
-          <div class="fund-logos" aria-label="Health funds">
-            <span class="fund-logo"><img src="/images/funds/smile.webp" width="285" height="56" alt="Smile.com.au" loading="lazy" decoding="async"></span>
-            <span class="fund-logo"><img src="/images/funds/bupa.webp" width="126" height="56" alt="Bupa" loading="lazy" decoding="async"></span>
-            <span class="fund-logo"><img src="/images/funds/medibank.webp" width="236" height="56" alt="Medibank" loading="lazy" decoding="async"></span>
-          </div>
-        </div>
-
+  <section class="hero hero--page hero--profile hero--impl" aria-labelledby="hero-title">
+    <div class="container hero-profile">
+      <div class="hero-profile__copy">
+        <span class="eyebrow">Implant education</span>
+        <h1 id="hero-title">Dr JohnPaul – <em class="hl">Implantology &amp; Education</em></h1>
+        <p class="hero-support">Dr JohnPaul <mark class="confirm">[CONFIRM: full name and preferred spelling. The rest of the site uses Dr John Paul Lee]</mark> has a particular interest in dental implants. Alongside caring for patients in Seymour, he continues his own training, invests in modern equipment and teaches implantology to other dentists.</p>
         <div class="btn-row">
-          <a class="btn btn--primary" href="tel:0357922055">Call 03 5792 2055</a>
-          <a class="btn btn--outline" href="https://www.centaurportal.com/d4w/org-2893/search?practiceID=3304" target="_blank" rel="noopener">Book online</a>
-          <a class="btn btn--secondary" href="/contact/">Send us an enquiry</a>
+          <a class="btn btn--primary" href="tel:0357922055"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call 03 5792 2055</a>
+          <a class="btn btn--secondary" href="https://www.centaurportal.com/d4w/org-2893/search?practiceID=3304" target="_blank" rel="noopener">Book online</a>
         </div>
+        <a class="hero-textlink" href="#book-implant">Book an implant consultation</a>
       </div>
-    </div>
-    <div class="container" data-reveal>
-      <img class="photo photo--shadow book-photo" src="/images/waiting-room.webp" width="1600" height="900" alt="The waiting area at New'Gen Dental Surgery on Anzac Avenue, Seymour" loading="lazy" decoding="async">
-    </div>
-  </section>
-
-
-  <section class="section" aria-labelledby="faq-title">
-    <div class="container">
-      <div class="section-head section-head--center" data-reveal>
-        <span class="eyebrow">Good to know</span>
-        <h2 id="faq-title">Frequently Asked <em class="hl">Questions</em></h2>
-      </div>
-      <div class="faq-grid">
-      <div class="faq-media" data-reveal="left">
-        <img class="photo photo--shadow faq-photo" src="/images/faq-treatment.webp" width="960" height="1200" alt="Dr John Paul Lee and a dental assistant treating a patient at New’Gen Dental Surgery" loading="lazy" decoding="async">
-      </div>
-      <div class="faq" data-stagger>
-        <div class="faq-item">
-          <h3 style="margin:0;font-size:inherit">
-            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn">
-              Who writes the articles on this blog?
-              <span class="plus" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 1v10M1 6h10"/></svg></span>
-            </button>
-          </h3>
-          <div class="faq-a" id="faq-1" role="region" aria-labelledby="faq-1-btn">
-            <p>Our articles are prepared by the team at New&#x27;Gen Dental Surgery in Seymour and reflect how we practise and the questions our patients ask us.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <h3 style="margin:0;font-size:inherit">
-            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">
-              Is the information here specific to my situation?
-              <span class="plus" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 1v10M1 6h10"/></svg></span>
-            </button>
-          </h3>
-          <div class="faq-a" id="faq-2" role="region" aria-labelledby="faq-2-btn">
-            <p>No. Our articles are general in nature. Your circumstances may differ, so please book an examination for advice specific to you.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <h3 style="margin:0;font-size:inherit">
-            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">
-              How often do you publish?
-              <span class="plus" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 1v10M1 6h10"/></svg></span>
-            </button>
-          </h3>
-          <div class="faq-a" id="faq-3" role="region" aria-labelledby="faq-3-btn">
-            <p>We publish as topics come up, usually driven by the questions our patients are asking at the time.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <h3 style="margin:0;font-size:inherit">
-            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">
-              Can I suggest a topic?
-              <span class="plus" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 1v10M1 6h10"/></svg></span>
-            </button>
-          </h3>
-          <div class="faq-a" id="faq-4" role="region" aria-labelledby="faq-4-btn">
-            <p>Yes. Call the practice on <a href="tel:0357922055">03 5792 2055</a> or <a href="/contact/">send an enquiry</a> with your suggestion and we will consider it for a future article.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <h3 style="margin:0;font-size:inherit">
-            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">
-              Do your articles include pricing?
-              <span class="plus" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 1v10M1 6h10"/></svg></span>
-            </button>
-          </h3>
-          <div class="faq-a" id="faq-5" role="region" aria-labelledby="faq-5-btn">
-            <p>No. Fees vary depending on your individual needs, so we provide a written estimate after an examination rather than publishing prices.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <h3 style="margin:0;font-size:inherit">
-            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-6-btn">
-              I read something here that worries me. What should I do?
-              <span class="plus" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 1v10M1 6h10"/></svg></span>
-            </button>
-          </h3>
-          <div class="faq-a" id="faq-6" role="region" aria-labelledby="faq-6-btn">
-            <p>Book an appointment. Call <a href="tel:0357922055">03 5792 2055</a> and our team will arrange a time to examine the issue properly rather than guessing from an article.</p>
-          </div>
-        </div>
-      </div>
-      </div>
+      <figure class="hero-profile__media" data-reveal="right">
+        <img src="/images/implantology/implantology-hero.webp" width="960" height="1200" alt="Dr JohnPaul seated at the demonstration table during his hands-on implant seminar, with participants watching and the drilling sequence on screen behind him" fetchpriority="high" decoding="async">
+        <figcaption><strong>Teaching implantology</strong><span>Hands-on seminar, October 2026</span></figcaption>
+      </figure>
     </div>
   </section>
+  <section class="section" aria-labelledby="s0"><div class="container ps-grid">
+    <div class="ps-head" data-reveal="left"><h2 id="s0">A Special Interest in <em class="hl">Implantology</em></h2></div>
+    <div class="ps-body" data-reveal="right">
+      <p>Implant dentistry keeps developing, with new techniques, materials and planning tools. Dr JohnPaul makes ongoing education in this area a regular part of his work, including <mark class="confirm">[CONFIRM: implant courses, postgraduate training or memberships completed, with years]</mark>. He has been placing implants since <mark class="confirm">[CONFIRM: year, or number of years]</mark>.</p>
+      <p>For you, that means implant treatment that is explained clearly and planned carefully, with the alternatives, such as bridges and dentures, discussed too, so you can make an informed decision.</p>
+    </div>
+  </div></section>
+  <section class="section section--grey" aria-labelledby="s1"><div class="container ps-grid">
+    <div class="ps-head" data-reveal="left"><h2 id="s1">Investing in Modern <em class="hl">Technology</em></h2></div>
+    <div class="ps-body" data-reveal="right">
+      <p>We plan treatment using an intraoral scanner, OPG imaging and RayFace facial scanning, and our in-house milling machine and furnace allow certain crowns to be made here rather than sent away.</p>
+      <p>For implant treatment, the practice uses <mark class="confirm">[CONFIRM: implant system and surgical equipment, brand and model names, and whether 3D (CBCT) imaging is available on site or by referral]</mark>. Having this equipment in Seymour means more of your planning and treatment can happen locally, without always needing to travel to a major city.</p>
+      <div class="gallery" data-stagger><figure><img src="/images/medit-intraoral-scanner.webp" width="1600" height="1200" alt="The Medit intraoral scanner" loading="lazy" decoding="async"><figcaption>Intraoral scanner</figcaption></figure><figure><img src="/images/rayface-facial-scanner.webp" width="1600" height="1200" alt="The RayFace facial scanner" loading="lazy" decoding="async"><figcaption>RayFace facial scanning</figcaption></figure><figure><img src="/images/milling-machine.webp" width="1600" height="1200" alt="The in-house milling machine" loading="lazy" decoding="async"><figcaption>In-house milling machine and furnace</figcaption></figure></div>
+    </div>
+  </div></section>
+  <section class="section" aria-labelledby="s2"><div class="container split split--page">
+    <div data-reveal="left"><h2 id="s2">Teaching <em class="hl">Implantology</em></h2><div class="ps-body">
+      <p>Dr JohnPaul also teaches implantology to other dentists. At his hands-on courses he takes participants through the planning and drilling sequence for placing an implant, which they then practise on training models.</p>
+      <p>His most recent seminar was held on the weekend of 3 to 4 October 2026 at <mark class="confirm">[CONFIRM: venue and city]</mark>, <mark class="confirm">[CONFIRM: seminar name and the organiser or company that ran it]</mark>. <mark class="confirm">[CONFIRM: other organisations he teaches or presents for, and how long he has been teaching]</mark></p>
+      <p>Teaching keeps him across current techniques, and the careful, step-by-step approach he shares with colleagues is the same one he brings to his patients.</p>
+    </div></div>
+    <div class="split__media" data-reveal="right"><img class="photo photo--shadow" src="/images/implantology/implant-seminar-teaching.webp" width="1200" height="900" alt="Dr JohnPaul walking between workstations at his implant seminar while dentists practise on training models" loading="lazy" decoding="async"></div>
+  </div></section>
+  <section class="section section--grey" aria-labelledby="s3"><div class="container">
+    <div class="section-head" data-reveal>
+      <h2 id="s3">Seminar <em class="hl">Gallery</em></h2>
+      <p class="lead">Photos and video from the hands-on implant seminar on 3 and 4 October 2026. All of the work shown was carried out on training models. Select a photo to see it larger.</p>
+    </div>
+    <div class="sgallery"><a class="sg-item" href="/images/implantology/implant-seminar-01.webp" data-lb data-caption="Explaining the drilling sequence"><img src="/images/implantology/implant-seminar-01-sm.webp" width="600" height="800" alt="Dr JohnPaul seated at a demonstration table, explaining the mandibular drilling sequence on screen to dentists gathered around him" loading="lazy" decoding="async"><span class="sg-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span><span class="sr-only">View larger: Explaining the drilling sequence</span></a><a class="sg-item" href="/images/implantology/implant-seminar-02.webp" data-lb data-caption="Guidance during the hands-on session"><img src="/images/implantology/implant-seminar-02-sm.webp" width="600" height="800" alt="A dentist wearing magnifying loupes places an implant in a training model while a course tutor points to the next drill in the kit" loading="lazy" decoding="async"><span class="sg-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span><span class="sr-only">View larger: Guidance during the hands-on session</span></a><a class="sg-item" href="/images/implantology/implant-seminar-03.webp" data-lb data-caption="Practising on a training model"><img src="/images/implantology/implant-seminar-03-sm.webp" width="600" height="800" alt="A dentist wearing magnifying loupes uses an implant handpiece on a training model" loading="lazy" decoding="async"><span class="sg-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span><span class="sr-only">View larger: Practising on a training model</span></a><a class="sg-item" href="/images/implantology/implant-seminar-04.webp" data-lb data-caption="Preparing an implant site"><img src="/images/implantology/implant-seminar-04-sm.webp" width="600" height="800" alt="A dentist in a navy polo shirt drills an implant site in a training jaw, with the surgical kit open on the table" loading="lazy" decoding="async"><span class="sg-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span><span class="sr-only">View larger: Preparing an implant site</span></a><a class="sg-item" href="/images/implantology/implant-seminar-05.webp" data-lb data-caption="Working through the steps together"><img src="/images/implantology/implant-seminar-05-sm.webp" width="600" height="800" alt="Two dentists working side by side on training models with surgical kits open in front of them" loading="lazy" decoding="async"><span class="sg-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span><span class="sr-only">View larger: Working through the steps together</span></a><a class="sg-item" href="/images/implantology/implant-seminar-06.webp" data-lb data-caption="Placing components"><img src="/images/implantology/implant-seminar-06-sm.webp" width="600" height="800" alt="A dentist seated at a workstation fits a component to a training model" loading="lazy" decoding="async"><span class="sg-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span><span class="sr-only">View larger: Placing components</span></a><a class="sg-item sg-item--wide" href="/images/implantology/implant-seminar-07.webp" data-lb data-caption="Seminar participants with their certificates"><img src="/images/implantology/implant-seminar-07-sm.webp" width="900" height="721" alt="Dr JohnPaul with the dentists who completed the hands-on implant seminar, several holding their certificates" loading="lazy" decoding="async"><span class="sg-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span><span class="sr-only">View larger: Seminar participants with their certificates</span></a></div>
+    <h3 class="svideos-head">Seminar videos</h3>
+    <div class="svideos"><figure><video controls playsinline preload="none" width="464" height="832" data-poster="/images/implantology/implant-seminar-video-01-poster.webp" aria-label="Dr JohnPaul explaining the implant drilling sequence to participants"><source src="/media/implantology/implant-seminar-video-01.mp4" type="video/mp4">Your browser cannot play this video. <a href="/media/implantology/implant-seminar-video-01.mp4">Download the video</a>.</video><figcaption>Dr JohnPaul explaining the implant drilling sequence to participants</figcaption></figure><figure><video controls playsinline preload="none" width="576" height="1024" data-poster="/images/implantology/implant-seminar-video-02-poster.webp" aria-label="Dr JohnPaul demonstrating implant placement on a training model"><source src="/media/implantology/implant-seminar-video-02.mp4" type="video/mp4">Your browser cannot play this video. <a href="/media/implantology/implant-seminar-video-02.mp4">Download the video</a>.</video><figcaption>Dr JohnPaul demonstrating implant placement on a training model</figcaption></figure></div>
+  </div></section>
+  <section class="section" id="book-implant" aria-labelledby="s4"><div class="container contact-grid">
+    <div data-reveal="left">
+      <span class="eyebrow">Appointments</span>
+      <h2 id="s4">Book an Implant <em class="hl">Consultation</em></h2>
+      <div class="ps-body">
+        <p>If you have a missing tooth or are thinking about implants, a consultation with Dr JohnPaul is the place to start. He will assess whether implants are suitable for you and explain your options, the timeline and the costs before you decide.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="https://www.centaurportal.com/d4w/org-2893/search?practiceID=3304" target="_blank" rel="noopener">Book an implant consultation</a>
+          <a class="btn btn--secondary" href="tel:0357922055"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call 03 5792 2055</a>
+        </div>
+        <p class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24/7 booking line: call any time to arrange an appointment</p>
+        <p class="impl-note">As with any surgical procedure, dental implant treatment carries risks. We discuss the risks relevant to your situation, and the alternatives, before you consent to treatment.</p>
+      </div>
+    </div>
+    <div data-reveal="right">
+      <div class="booking-embed">
+        <h3>Book online</h3>
+        <p>Choose a time that suits you. Your appointment goes straight into our diary.</p>
+        <div id="centaurIframe" class="centaurIframe"></div>
+        <p class="booking-fallback">Booking screen not showing? <a href="https://www.centaurportal.com/d4w/org-2893/search?practiceID=3304" target="_blank" rel="noopener">Open online booking in a new tab</a> or call <a href="tel:0357922055">03 5792 2055</a>.</p>
+      </div>
+    </div>
+  </div></section>
 </main>
+
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Seminar photo viewer" hidden>
+  <div class="lb__bar"><span class="lb__count" aria-live="polite"></span>
+    <button class="lb__close" type="button" aria-label="Close photo viewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="lb__stage"><img alt=""></div>
+  <p class="lb__cap"></p>
+  <button class="lb__prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <button class="lb__next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
 
 <!-- =========================================================
      FOOTER
@@ -1135,6 +1122,7 @@ body{padding-bottom:4.6rem}
           <li><a href="/team/dental-assistants-reception/">Dental Assistants and Reception Team</a></li>
           <li><a href="/services/">Services</a></li>
           <li><a href="/services/general-dentistry/emergency-dentistry/">Emergency Dentistry</a></li>
+          <li><a href="/implantology/">Implant Education</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
       </div>
@@ -1293,6 +1281,55 @@ body{padding-bottom:4.6rem}
       if(panel){panel.classList.toggle('is-open',!open);}
     });
   });
+})();
+</script>
+
+<script>
+/* Implant Education page: gallery lightbox, lazy video posters, lazy Centaur online booking embed. */
+(function(){
+  var items=[].slice.call(document.querySelectorAll('a[data-lb]'));
+  var lb=document.getElementById('lightbox');
+  if(items.length&&lb){
+    var img=lb.querySelector('.lb__stage img'),cap=lb.querySelector('.lb__cap'),count=lb.querySelector('.lb__count'),i=0,last=null,x0=null;
+    var show=function(n){i=(n+items.length)%items.length;var a=items[i];img.src=a.getAttribute('href');img.alt=a.querySelector('img').alt;cap.textContent=a.getAttribute('data-caption')||'';count.textContent=(i+1)+' of '+items.length;};
+    var open=function(n){last=document.activeElement;show(n);lb.hidden=false;document.body.classList.add('lb-open');lb.querySelector('.lb__close').focus();};
+    var close=function(){lb.hidden=true;document.body.classList.remove('lb-open');img.removeAttribute('src');if(last)last.focus();};
+    items.forEach(function(a,n){a.addEventListener('click',function(e){e.preventDefault();open(n);});});
+    lb.querySelector('.lb__close').addEventListener('click',close);
+    lb.querySelector('.lb__prev').addEventListener('click',function(){show(i-1);});
+    lb.querySelector('.lb__next').addEventListener('click',function(){show(i+1);});
+    lb.addEventListener('click',function(e){if(e.target===lb||e.target.classList.contains('lb__stage'))close();});
+    document.addEventListener('keydown',function(e){
+      if(lb.hidden)return;
+      if(e.key==='Escape'){close();}
+      else if(e.key==='ArrowRight'){show(i+1);}
+      else if(e.key==='ArrowLeft'){show(i-1);}
+      else if(e.key==='Tab'){var f=[].slice.call(lb.querySelectorAll('button'));var k=f.indexOf(document.activeElement);e.preventDefault();f[(k+(e.shiftKey?-1:1)+f.length)%f.length].focus();}
+    });
+    lb.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;},{passive:true});
+    lb.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50)show(i+(dx<0?1:-1));x0=null;});
+  }
+  /* videos: poster and metadata only load when the player is near the screen; one plays at a time */
+  var vids=[].slice.call(document.querySelectorAll('video[data-poster]'));
+  var arm=function(v){if(!v.getAttribute('poster')){v.setAttribute('poster',v.getAttribute('data-poster'));v.preload='metadata';}};
+  if('IntersectionObserver' in window){var vio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){arm(e.target);vio.unobserve(e.target);}});},{rootMargin:'300px'});vids.forEach(function(v){vio.observe(v);});}
+  else{vids.forEach(arm);}
+  vids.forEach(function(v){v.addEventListener('play',function(){vids.forEach(function(o){if(o!==v&&!o.paused)o.pause();});});});
+  /* Centaur (D4W eAppointments) embed, from the practice's snippet: orgId 2893, practiceId 3304. Loaded only when the booking panel comes near the screen. */
+  var box=document.getElementById('centaurIframe');
+  if(box){
+    var loaded=false;
+    var load=function(){
+      if(loaded)return;loaded=true;
+      window.divSelector='centaurIframe';window.orgId=2893;window.centOrigin='https://www.centaurportal.com';
+      window.practiceId=3304;window.doctorId=undefined;window.sourceId=undefined;window.centUserParams='';
+      var po=document.createElement('script');po.type='text/javascript';po.async=true;po.charset='utf-8';
+      po.src='https://www.centaurportal.com/d4w/resources/js/iframe.min.js?_=1772682549971';
+      document.body.appendChild(po);
+    };
+    if('IntersectionObserver' in window){var bio=new IntersectionObserver(function(es){if(es.some(function(e){return e.isIntersecting;})){bio.disconnect();load();}},{rootMargin:'500px'});bio.observe(box);}
+    else{load();}
+  }
 })();
 </script>
 </body>
